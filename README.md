@@ -29,7 +29,7 @@ put database credentials in .env file
 3. Migrate and insert records
 
 ```
-$ php artisan migrate --seed
+$ php artisan migrate:fresh --seed
 ```
 
 4. Storage Link
@@ -42,5 +42,12 @@ $ php artisan storage:link
 ```
 Export File Insomnia
 - Insomnia/insomnia..
+
+```
+
+6. login
+```
+email = admin@admin.com
+password = password
 
 ```

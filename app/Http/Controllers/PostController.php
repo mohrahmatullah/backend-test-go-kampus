@@ -48,9 +48,10 @@ class PostController extends Controller
 
         //create post
         Post::create([
-            'image'     => $image->hashName(),
-            'title'     => $request->title,
-            'content'   => $request->content
+            'image'         => $image->hashName(),
+            'title'         => $request->title,
+            'content'       => $request->content,
+            'created_by'    => auth()->user()->id
         ]);
 
         //redirect to index
@@ -89,17 +90,19 @@ class PostController extends Controller
 
             //update post with new image
             $post->update([
-                'image'     => $image->hashName(),
-                'title'     => $request->title,
-                'content'   => $request->content
+                'image'         => $image->hashName(),
+                'title'         => $request->title,
+                'content'       => $request->content,
+                'created_by'    => auth()->user()->id
             ]);
 
         } else {
 
             //update post without image
             $post->update([
-                'title'     => $request->title,
-                'content'   => $request->content
+                'title'         => $request->title,
+                'content'       => $request->content,
+                'created_by'    => auth()->user()->id
             ]);
         }
 
