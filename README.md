@@ -37,3 +37,10 @@ $ php artisan migrate --seed
 ```
 $ php artisan storage:link
 ```
+
+5. For frontend/mobile
+```
+Export File Insomnia
+- Insomnia/insomnia..
+
+```
