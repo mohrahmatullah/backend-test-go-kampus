@@ -39,6 +39,11 @@ $ php artisan storage:link
 ```
 
 5. For frontend/mobile
+
+```
+$ php artisan passport:install
+```
+
 ```
 Export File Insomnia
 - Insomnia/insomnia..
