@@ -40,7 +40,7 @@
         CKEDITOR.replace( 'content' );
     </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
+    {{--
     <script>
         //message with toastr
         @if(session()->has('success'))
@@ -53,5 +53,6 @@
             
         @endif
     </script>
+    --}}
 </body>
 </html>
